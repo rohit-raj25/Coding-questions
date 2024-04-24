@@ -22,8 +22,8 @@ public class q5 {
             LH = RH;
         }
 
-        rightView(root.left, RH+1);
         rightView(root.right, RH+1);
+        rightView(root.left, RH+1);
     }
 
     static Node insert(Node root,int data){

@@ -10,14 +10,14 @@ public class tempSum {
         }
         int k = sc.nextInt();
 
-        int i = 0; // Start index should be 0
-        int j = k - 1; // End index should be k - 1
+        int i = 0; // Adjusted loop starting index
+        int j = k - 1; // Adjusted loop ending index
         int res = 0;
 
-        while (j < n) { // Change condition to ensure j doesn't exceed array bounds
+        while (j < n) { // Adjusted loop condition
             int min = Integer.MAX_VALUE;
             int max = Integer.MIN_VALUE;
-            for (int a = i; a < j; a++) {
+            for (int a = i; a <= j; a++) {
                 min = Math.min(arr[a], min);
                 max = Math.max(arr[a], max);
             }

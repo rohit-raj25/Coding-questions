@@ -47,7 +47,7 @@ public class q6 {
             root=insert(root,sc.nextInt());
         }
         sc.close();
-        System.err.println(height(root));
+        System.out.println(height(root));
         
     }
 }
